@@ -1,0 +1,25 @@
+
+
+Started GET "/" for ::1 at 2015-10-14 10:37:02 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/sv032366/.rvm/gems/ruby-2.1.2/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 14ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'landing_page/home'` to `controller: 'landing_page/home'`. (called from block in <top (required)> at /Users/sv032366/minions/mySite/MyWebSite/mySite/config/routes.rb:4)
+
+
+Started GET "/" for ::1 at 2015-10-14 10:37:57 -0500
+Processing by LandingPageController#home as HTML
+  Rendered landing_page/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1229ms (Views: 1219.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/portfolio_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 10:37:59 -0500
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 10:37:59 -0500
+
+
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 10:37:59 -0500
+
+
+Started GET "/assets/portfolio_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 10:37:59 -0500
