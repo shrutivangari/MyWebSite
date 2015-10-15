@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "SV" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Shruti Vangari" %></title>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -38,30 +38,47 @@
   </head>
   <body>
 
-    <div class="navbar navbar-default navbar-static-top">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">MySite</a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Portfolio", "/pages/portfolio"  %></li>
-            <li><%= link_to "Resume", "/pages/resume"  %></li>
-            <li><%= link_to "About me", "/pages/aboutme"  %></li>
-          </ul>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">SV</a>
         </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+              <li><%= link_to "Portfolio", "/pages/portfolio"  %></li>
+              <li><%= link_to "Resume", "/pages/resume"  %></li>
+              <li><%= link_to "About me", "/pages/aboutme"  %></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
-      <%= yield %>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Blah</h1>
+      </div>
+      <p class="lead">Stuff</p>
     </div>
 
-      <footer>
-        <p>&copy; Shruti Vangari</p>
+    <footer class="footer">
+      <div class="container text-center">
+         <a class="btn btn-social-icon btn-github" href="www.github.com/shrutivangari"><i class="fa fa-github"></i></a>
+          <a class="btn btn-social-icon btn-linkedin" href="www.linkedin.com/in/shrutivangari"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <small>&copy; Shruti Vangari</small>
+      </div>
       </footer>
-
-    </div> <!-- /container -->
+    </footer>
 
   </body>
 </html>
