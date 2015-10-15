@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'portfolio_page/portfolio'
-  get 'landing_page/home'
-  root 'landing_page#home'
+  get '/' => 'pages#home'
+  get 'pages/aboutme' => 'pages#aboutme'
+  get 'pages/resume' => 'pages#resume'
+  get 'pages/portfolio' => 'pages/portfolio'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
