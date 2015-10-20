@@ -48,12 +48,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">SV</a>
+          <a class="navbar-brand" href="/">S</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-              <li><%= link_to "Portfolio", "/pages/portfolio"  %></li>
+              <li><%= link_to "Timeline", "/pages/timeline"  %></li>
               <li><%= link_to "Resume", "/pages/resume"  %></li>
+              <li><%= link_to "Professional Experience", "/pages/experience"  %></li>
+              <li><%= link_to "Projects", "/pages/projects"  %></li>
               <li><%= link_to "About me", "/pages/aboutme"  %></li>
               </ul>
             </li>
@@ -64,10 +66,7 @@
 
     <!-- Begin page content -->
     <div class="container">
-      <div class="page-header">
-        <h1>Blah</h1>
-      </div>
-      <p class="lead">Stuff</p>
+      <%= yield %>
     </div>
 
     <footer class="footer">
@@ -76,8 +75,8 @@
          <a class="btn btn-social-icon btn-linkedin" href="https://linkedin.com/in/shrutivangari" target="_blank"><i class="fa fa-linkedin"></i></a>
          <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/shruti_sv47" target="_blank"><i class="fa fa-twitter"></i></a>
          <a href="mailto:vangari.shruti@gmail.com" role="button" class="btn btn-vk btn-xlarge"><i class="fa fa-envelope-o"></i></a>
+         <!-- <small class="text-right">&copy; Shruti Vangari</small> -->
       </div>
-          <small>&copy; Shruti Vangari</small>
     </footer>
 
   </body>
