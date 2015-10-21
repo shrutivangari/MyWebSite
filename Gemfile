@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 group :development, :test do
   #Basic gems required
+  gem 'rb-readline'
   gem 'rails', '4.2.4'
   gem 'sqlite3'
   gem 'uglifier', '>= 1.3.0'

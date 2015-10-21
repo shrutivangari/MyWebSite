@@ -12751,3 +12751,9 @@ Started GET "/pages/interests" for ::1 at 2015-10-21 16:50:41 -0500
 Processing by PagesController#interests as HTML
   Rendered pages/interests.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 98ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-21 17:04:13 -0500
+Processing by PagesController#aboutme as HTML
+  Rendered pages/aboutme.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 434ms (Views: 425.1ms | ActiveRecord: 0.0ms)
