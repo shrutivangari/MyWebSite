@@ -10,9 +10,8 @@ group :development, :test do
   gem 'jbuilder', '~> 2.0'
   gem 'sdoc', '~> 0.4.0', group: :doc
     #Bootstrap related gems
-  gem "therubyracer"
-  gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-  gem "twitter-bootstrap-rails"
+  gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+  gem 'twitter-bootstrap-rails'
   gem 'bootstrap-social-rails', '~> 4.8.0'
 end
 
@@ -22,6 +21,7 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'therubyracer'
 end
 
-ruby "2.1.2"
+ruby "2.2.1"
