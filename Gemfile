@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
-
-group :development, :test do
   #Basic gems required
   gem 'rb-readline'
   gem 'rails', '4.2.4'
@@ -13,15 +11,8 @@ group :development, :test do
   gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
   gem 'twitter-bootstrap-rails'
   gem 'bootstrap-social-rails', '~> 4.8.0'
-end
-
-group :development do
   gem 'web-console', '~> 2.0'
-end
-
-group :production do
   gem 'rails_12factor'
   gem 'therubyracer'
-end
-
+  gem'pg'
 ruby "2.2.1"
