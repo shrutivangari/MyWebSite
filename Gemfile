@@ -7,6 +7,8 @@ source 'https://rubygems.org'
   gem 'jbuilder', '~> 2.0'
   gem 'sdoc', '~> 0.4.0', group: :doc
     #Bootstrap related gems
+
+  gem 'jquery-rails'
   gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
   gem 'twitter-bootstrap-rails'
   gem 'bootstrap-social-rails', '~> 4.8.0'
